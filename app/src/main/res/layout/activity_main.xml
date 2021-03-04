@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainContainer"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="120dp"
+        android:id="@+id/edtCounter"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdd"
+            android:text="Add"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRemove"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:text="Remove"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentCounter1"
+        android:name="com.example.fragment1.CounterFragment"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragmentCounter2"
+        android:name="com.example.fragment1.CounterFragment"/>
+
+
+</LinearLayout>
